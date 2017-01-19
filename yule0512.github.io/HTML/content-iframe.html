@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content" content="text/html" charset="utf-8">
+	<title>HOME</title>
+</head>
+    <style type="text/css">
+       /* 
+
+         frameset 嵌入到iframe里面 滚动条设置
+         为了使用整个页面 只有一个滚动条控制整个页面（包括frame）
+
+        */
+        body{
+        margin: 0px;
+        height: 1024px;
+        width: auto;
+       } 
+        iframe{
+        width:100%;
+        height:100%;
+        border-width: 0px;
+        }
+    	#guanggao{
+	   	width: 160px;
+	   	height: 200px;
+	   	position:fixed;
+	   	top: auto;
+	   	right: 0px;
+	   	bottom: 68px;
+        z-index: 99;
+        background-color: #CAE1FF;
+	   }
+       #guanggao2{
+        width: 160px;
+        height: 200px;
+        position:fixed;
+        top: 120px;
+        left: 0px;
+        bottom: auto;
+        z-index: 99;
+        background-color: #CAE1FF;
+       }
+	   #guanggaolist li{
+          list-style: none;
+          margin: 3px;
+       }
+       #guanggaolist a{
+        text-decoration: none;
+       }
+       #closeguanggao:hover{
+          
+       }
+      .guanggaoClass{
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      function closeguanggao2(){
+       var guanggao=document.getElementById("guanggao2");
+       guanggao.style.display="none";
+      }
+      function closeguanggao(){
+       var guanggao=document.getElementById("guanggao");
+       guanggao.style.display="none";
+        
+      }
+       
+   
+    
+
+
+    </script>
+<body>
+  <iframe src="./tourism.html" scrolling="scrolling"></iframe>
+   <div id="guanggao2">
+        <span id="closeguanggao" style="color:red;cursor:pointer; " onclick="closeguanggao2()">X</span>
+        <span>这里是广告位1哦！！！！！</span>
+        <ul id="guanggaolist">
+            <li><a href="#" target="_blank">股票行情</a></li>
+            <li><a href="#" target="_blank">上海英语培训</a></li>
+            <li><a href="#" target="_blank">投资加盟</a></li>
+            <li><a href="#" target="_blank">爱屋及乌</a></li>
+            <li><a href="#" target="_blank">去哪儿旅游</a></li>
+        </ul>
+   </div>
+    <div id="guanggao">
+        <span id="closeguanggao" style="color:red;cursor:pointer; " onclick="closeguanggao()">X</span>
+        <span>这里是广告位2哦！！！！！</span>
+        <ul id="guanggaolist">
+            <li><a href="#" target="_blank">股票行情</a></li>
+            <li><a href="#" target="_blank">上海英语培训</a></li>
+            <li><a href="#" target="_blank">投资加盟</a></li>
+            <li><a href="#" target="_blank">爱屋及乌</a></li>
+            <li><a href="#" target="_blank">去哪儿旅游</a></li>
+    </ul>
+   </div>
+
+</body>
+</html>
