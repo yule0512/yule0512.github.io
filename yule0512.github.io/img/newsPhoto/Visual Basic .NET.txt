@@ -1,2 +1,0 @@
-　　6、Visual Basic .NET
-　　Visual Basic .NET在2014年开始挤入排行榜前十名，而在最新版当中，Visual Basic .NET更上升到第7名。Visual Basic .NET作为微软Visual Basic 6.0 version的继承者，一直备受压力，在发布之处甚至受到一些开发者抵制。很多开发者表示，VB.NET丢到了很多VB6中的constructs和用户界面功能，并没有很好的继承VB6的优点；但微软似乎在吧VB .NET作为一个全新的语言，目前看来也取得了不错的成绩。
