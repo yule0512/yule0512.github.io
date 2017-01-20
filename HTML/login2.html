@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<head runat="server"> 
+<meta charset="utf-8">
+<title>无标题页</title> 
+    <script language="javascript" type="text/javascript"> 
+        function hid() 
+        { 
+        var div4=document.getElementById("div1"); 
+        div4.style.display="block"; 
+        div4.style.width="200px"; 
+        div4.style.height="150px"; 
+        div4.style.zIndex="9999"; 
+        div4.style.top="43%"; 
+        div4.style.left="43%"; 
+        div4.style.position="absolute"; 
+        var div3=document.getElementById("div2"); 
+        div3.style.display="block"; 
+        div3.style.width="1000px"; 
+        div3.style.zIndex="9998"; 
+        div3.style.position="absolute"; 
+        div3.style.height=document.body.offsetHeight; 
+        div3.style.top="0px"; 
+        div3.style.left="0px"; 
+        } 
+        function vis() 
+        { 
+        var div4=document.getElementById("div1"); 
+        div4.style.display="none"; 
+        var div3=document.getElementById("div2"); 
+        div3.style.display="none"; 
+        div3.style.width="0px"; 
+        div3.style.height="0px"; 
+        div4.innerHTML="<a onclick='vis()' style='display: block' id='text'>点击关闭</a><br /><br /><input name='TextBox2' type='text' id='TextBox2' /><br /><input id='Button3' type='button' value='button' onclick='return Button3_onclick()' />"; 
+        } 
+    </script> 
+</head> 
+<body style="width:100%; height:100%"> 
+<div align="center"> 
+  <table width="768" border="0" cellpadding="0" cellspacing="0"> 
+    <!--DWLayoutTable--> 
+    <tr> 
+      <td width="768" height="403">    <form id="form1" runat="server"> 
+    <a onclick="hid()">点击显示</a><br /> 
+            <div style="color: white; background-color: green; display: none;" id="div1"> 
+                <a onclick="vis()" style="display: block" id="text">点击关闭</a><br /> 
+                    <br /> 
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br /> 
+                    <input id="Button3" type="button" value="button" onclick="return Button3_onclick()" /></div> 
+            <div style="filter:alpha(opacity=70);width: 1px; height: 8px; background-color: #cccccc; left: 0px; position: absolute; top: 0px; z-index: 9998; display: none;" id="div2"> 
+            </div> 
+    </form></td> 
+    </tr> 
+  </table> 
+</div> 
+</body> 
+</html> 

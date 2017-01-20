@@ -1,0 +1,2 @@
+　10、Swift
+　　Swift虽然在最新的TIOBE榜单中排位14名，但是相比去年3月的24名，进步速度可谓飞快。Swift拥有Python的易用性，还有Objective-C、C++和Ruby的影子。Swift一直是苹果生态系统中的一员，直到去年WWDC大会上，苹果宣布开源自己的Swift语言；Swift语法十分简单，且高效强大，但是他同样有一个缺点就是，只能运行在苹果的系统中（OS X和iOS）。
